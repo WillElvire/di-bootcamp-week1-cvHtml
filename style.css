@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.curiculum {
+    display: flex;
+    width: 60%;
+    border: 1px solid rgb(230, 94, 4);
+    margin-left: 20%;
+    margin-top: 1%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.curiculum .sidebar {
+    background: rgb(230, 94, 4);
+    height: auto;
+    width: 200% !important;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.curiculum .sidebar .image img {
+    border-radius: 100px;
+    margin-top: 30%;
+    border: 2px solid white;
+    transition: border 0.1s;
+}
+
+.curiculum .sidebar .image img:hover {
+    filter: blur(0.8px);
+    border: none;
+    transition: filter 0.1s;
+}
+.curiculum .sidebar .text h1 {
+    font-size: large;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.curiculum .sidebar .text h6 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: -8%;
+    color: white;
+    text-decoration: underline;
+}
+
+.curiculum .sidebar .text .contact {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+    color: white;
+}
+
+.curiculum .sidebar .text .email {
+    font-style: italic;
+    font-size: 12px;
+    color: white;
+}
+
+.curiculum .sidebar .text .socials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.curiculum .sidebar .text .socials .social {
+    height: 25px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.curiculum .sidebar .text .socials .social:hover {
+    background: transparent;
+    transition: color 0.5s;
+}
+
+.curiculum .sidebar .text .socials .social:hover span {
+    color: white;
+    transform: rotate(180deg);
+}
+
+.curiculum .sidebar .text .socials .social span {
+    color: rgb(230, 94, 4);
+    margin-top: 3px;
+}
+
+.curiculum .sidebar .text .street {
+    font-style: italic;
+    font-size: 12px;
+    color: white;
+}
+
+.content {
+    margin: 50px;
+}
+
+.title {
+    width: 40%;
+    height: 6vh;
+    background-color: rgb(230, 94, 4);
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.title h1 {
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.experience {
+    margin-top: 5%;
+}
+
+.experience .text {
+    margin-top: 5%;
+}
+
+.formation {
+    margin-top: 5%;
+}
+.formation .text {
+    margin-top: 5%;
+}
+
+.about p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.formation .percent {
+    display: flex;
+    margin-top: 3%;
+}
+.formation .percent .jauge {
+    width: 150px;
+    height: 15px;
+    border-radius: 20px;
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.formation .percent .jauge .remplissage-83 {
+    width: 120px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: rgb(230, 94, 4);
+}
+
+.formation .percent .jauge .remplissage-90 {
+    width: 110px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: rgb(230, 94, 4);
+}
+
+.langue {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text .timeline {
+    height: 40px;
+    font-family: sans-serif;
+}
+
+.text .timeline h3 {
+    margin-top: -18px;
+    color: rgb(230, 94, 4);
+    font-size: 17px;
+}
+
+.text .timeline h5 {
+    margin-top: -20px !important;
+    font-size: 12px;
+}
+
+.text .timeline h4 {
+    color: gray;
+    font-size: 11px;
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .curiculum {
+        display: block !important;
+        width: 150% !important;
+        border: none;
+        height: 100%;
+        margin-left: 0%;
+        margin-top: 1%;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow:none
+    }
+
+
+    .curiculum .sidebar .text h1 {
+        margin-top: -1px !important;
+    }
+
+    .socials {
+        display: flex !important;
+    }
+
+    .curiculum .sidebar .image img {
+        width: 90px;
+        height: 90px;
+    }
+    .curiculum .sidebar .image{
+        margin-top: -25%;
+    }
+
+    .content {
+        width: 400px !important;
+    }
+
+    .curiculum .sidebar {
+        width: auto !important;
+    }
+
+    .formation .percent {
+        display: block !important;
+    }
+
+    .about{
+        width: 100%;
+        
+    }
+    .about p{
+        font-size: 14px !important;
+        
+    }
+    .curiculum .sidebar .text h6{
+        margin-top: -5%;
+    }
+}
